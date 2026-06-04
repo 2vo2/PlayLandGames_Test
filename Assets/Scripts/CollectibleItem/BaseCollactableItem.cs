@@ -14,5 +14,6 @@ public abstract class BaseCollactableItem : MonoBehaviour, ICollectable, IAnimat
     public virtual void Collect()
     {
         gameObject.SetActive(false);
+        ScoreHandler.Instance.AddScore(_rewardValue);
     }
 }
