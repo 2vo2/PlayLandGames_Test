@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IAnimatable
+public interface IAnimatable
 {
-    
+    void Animation();
 }
