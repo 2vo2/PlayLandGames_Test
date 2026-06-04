@@ -1,0 +1,16 @@
+using Unity.VectorGraphics;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class UIButton : MonoBehaviour
+{
+    public void LoadScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+}
