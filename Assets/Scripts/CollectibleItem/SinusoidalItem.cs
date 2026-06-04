@@ -13,12 +13,7 @@ public class SinusoidalItem : BaseCollactableItem, IAnimatable
         _startPosition = transform.position;
     }
 
-    private void Update()
-    {
-        Animation();
-    }
-
-    public void Animation()
+    public override void Animation()
     {
         var sinY = _startPosition.y + Mathf.Sin(Time.time * _frequency) * _amplitude;
 
